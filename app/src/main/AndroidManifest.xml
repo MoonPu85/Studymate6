@@ -16,10 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".KoreaList_Activity"/>
-        <activity android:name=".MathList_Activity"/>
-        <activity
-            android:name=".English_Activity"/>
+        <activity android:name=".KoreaList_Activity" />
+        <activity android:name=".MathList_Activity" />
+        <activity android:name=".English_Activity" />
+        <activity android:name=".CommunityList_Activity" />
+        <activity android:name=".MusicList_Activity" />
+        <activity android:name=".ScianceList_Activity" />
+        <activity android:name=".ArtList_Activity" />
 
     </application>
 

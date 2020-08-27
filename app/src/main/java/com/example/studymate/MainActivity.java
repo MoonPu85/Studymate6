@@ -59,60 +59,50 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-//
-//
-//        Button engButton = (Button) findViewById(R.id.btn_english);
-//        engButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getApplicationContext(), EngActivity.class);
-//                startActivity(intent);
-//
-//            }
-//        });
-//
-//        Button scianceButton = (Button) findViewById(R.id.btn_sciance);
-//        scianceButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getApplicationContext(), ScienceActivity.class);
-//                startActivity(intent);
-//
-//            }
-//        });
-//
-//
-//        Button sociButton = (Button) findViewById(R.id.btn_community);
-//        sociButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getApplicationContext(), CommunityActivity.class);
-//                startActivity(intent);
-//
-//            }
-//        });
-//
-//        Button artButton = (Button) findViewById(R.id.btn_art);
-//        artButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getApplicationContext(), ArtActivity.class);
-//                startActivity(intent);
-//
-//            }
-//        });
-//
-//
-//        Button musicButton = (Button) findViewById(R.id.btn_music);
-//        mathButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getApplicationContext(), MusicActivity.class);
-//                startActivity(intent);
-//
-//            }
-//        });
+
+
+        Button scianceButton = (Button) findViewById(R.id.btn_sciance);
+        scianceButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ScianceList_Activity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+        Button ArtButton = (Button) findViewById(R.id.btn_art);
+        ArtButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ArtList_Activity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        Button musicButton = (Button) findViewById(R.id.btn_music);
+        musicButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MusicList_Activity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        Button commuButton = (Button) findViewById(R.id.btn_community);
+        commuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), CommunityList_Activity.class);
+                startActivity(intent);
+
+            }
+        });
+
     }
-
-
 }
+
+

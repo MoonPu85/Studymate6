@@ -16,7 +16,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class MathList_Activity extends AppCompatActivity {
+public class MusicList_Activity extends AppCompatActivity {
     private androidx.recyclerview.widget.RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -28,11 +28,10 @@ public class MathList_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_math);
+        setContentView(R.layout.activity_music);
 
 
-
-        recyclerView = (RecyclerView) findViewById(R.id.rc_math); //  아이디 연결
+        recyclerView = (RecyclerView) findViewById(R.id.rc_music); //  아이디 연결
         recyclerView.setHasFixedSize(true); //리사이클러뷰 성능강화
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
@@ -40,7 +39,7 @@ public class MathList_Activity extends AppCompatActivity {
 
         database = FirebaseDatabase.getInstance(); //파이어베이스 연동
 
-        databaseReference = database.getReference("Math"); //DB 테이블 연결
+        databaseReference = database.getReference("Music"); //DB 테이블 연결
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -56,7 +55,7 @@ public class MathList_Activity extends AppCompatActivity {
 
 
             @Override
-            public void onCancelled(@NonNull DatabaseError databaseError){
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
                 //DB를 가져오다가 err 발생하면 뭘 띄워줄지
                 Log.e("SubActivity", String.valueOf(databaseError.toException())); //에러문 출력
@@ -69,9 +68,5 @@ public class MathList_Activity extends AppCompatActivity {
         recyclerView.setAdapter(adapter); //리사이클러뷰에 어뎁터 연결
 
 
-
     }
-
-
 }
-

@@ -3,15 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#75FFFFFF"
-    >
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <TextView
 
@@ -26,23 +24,15 @@
             android:textSize="50dp" />]
 
 
-
-
-
-
-
-
-
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="427dp"
         android:layout_height="wrap_content"
-        android:baselineAligned="false"
         android:layout_gravity="center"
+        android:baselineAligned="false"
         android:gravity="center"
         android:paddingTop="80dp">
-
 
 
         <Button
@@ -98,10 +88,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center"
-        >
-
+        android:orientation="horizontal">
 
 
         <Button
@@ -119,6 +107,7 @@
             android:text="과학"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
+
         <Button
             android:id="@+id/btn_community"
             android:layout_width="96dp"
@@ -155,10 +144,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center"
-        >
-
+        android:orientation="horizontal">
 
 
         <Button
@@ -176,6 +163,7 @@
             android:text="논술"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
+
         <Button
             android:id="@+id/btn_music"
             android:layout_width="96dp"
@@ -213,8 +201,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn_physical"
@@ -231,9 +219,6 @@
             android:text="체육"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
-
-
-
 
 
     </LinearLayout>
