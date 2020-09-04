@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -101,6 +102,18 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
+        ImageButton locationButton = (ImageButton) findViewById(R.id.btn_location);
+        locationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    Intent intent = new Intent(getApplicationContext(), GPS_Activity.class);
+                    startActivity(intent);
+            }
+        });
+
+
 
     }
 }

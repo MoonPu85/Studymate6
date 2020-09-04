@@ -6,25 +6,42 @@
     android:background="#75FFFFFF"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <TextView
-
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="#F4F4F4"
-            android:gravity="center"
-            android:padding="5dp"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
             android:text="Study Mate"
             android:textColor="#3F51B5"
 
-            android:textSize="50dp" />]
+            android:textSize="22dp" />
+
+        <ImageButton
+            android:paddingBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_location"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="220dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_location_on_24" />
 
 
-    </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:background="@color/cardview_dark_background"
+        android:layout_width="match_parent"
+        android:layout_height="2px"/>
 
     <LinearLayout
         android:layout_width="427dp"
@@ -224,4 +241,9 @@
     </LinearLayout>
 
 
+
+    <View
+        android:background="@color/cardview_dark_background"
+        android:layout_width="match_parent"
+        android:layout_height="2px"/>
 </LinearLayout>
